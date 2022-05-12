@@ -9,7 +9,7 @@ This project contains a .py script that loads a target-image and a directory def
 The histogram for the target-image is firstly calculated and normalized using functions from cv2. After this is done for the given target image, it is done on the remaining images from the user defined directory. The script then compares the histograms and finds the three images that has the smallest distance to the target image, based on the histograms. Lastly the script produces an image file containing the target-image and the top three most similar images, including the calculated distance score for each of the images. Further it produces a .CSV file containing the name of the target-image and the three most similar images, placed in descending order according to their relative similarity to the target-image.
 
 ### Usage
-In order to reproduce the results I have gotten (and which can be found in the "out" folder), a few steps have to be followed:
+In order to reproduce the results I have gotten (and which can be found in the "out" folder), a few steps has to be followed:
 1) Install the relevant packages - for this script the only package that is necessary to install before running the script is cv2. This is also mentioned in the script as a comment. 
 2) Make sure to place the script in the "src" folder and the data in the "in" folder. The data I used can be accessed from this page: https://www.robots.ox.ac.uk/~vgg/data/flowers/102/ 
 3) Run the script from the terminal and remember to pass the required arguments (-ti (target_image) and -dn (directory_name)). 
