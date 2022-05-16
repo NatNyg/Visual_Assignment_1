@@ -13,7 +13,7 @@ The histogram for the target-image is firstly calculated and normalized using fu
 
 ### Usage
 In order to reproduce the results I have gotten (and which can be found in the "out" folder), a few steps has to be followed:
-1) Install the relevant packages - for this script the only package that is necessary to install before running the script is cv2. This is also mentioned in the script as a comment. 
+1) Install the relevant packages - for this script the only package that is necessary to install before running the script is cv2. This is also mentioned in the script as an in-line comment. 
 2) Make sure to place the script in the "src" folder and the data in the "in" folder. The data I used can be accessed from this page: https://www.robots.ox.ac.uk/~vgg/data/flowers/102/ 
 3) Run the script from the terminal and remember to pass the required arguments (-ti (target_image) and -dn (directory_name)) for the image_search script - for the upgraded version you shouldn't pass any arguments when running the script. 
 -> Make sure to navigate to the main folder before excecuting the script - then you just have to type the following in the terminal:
