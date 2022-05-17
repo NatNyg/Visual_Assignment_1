@@ -22,5 +22,4 @@ In order to reproduce the results I have gotten (and which can be found in the "
 This will give you approximately the same results as I have gotten in the "out" folder". 
 
 ### Results
-The results from the original script "image_search.py" is not the best, since this way of comparing images using histograms is not as precise as using eg. transfer learning. This becomes most clear when looking at the closest images in the out folder that contains images of flowers that are not the same color as the target-image, which is not something we as humans would immediately expect. 
-However, the result from the upgraded script provides a result that is much closer to what we would excpect as humans - three very alike images with the same color (for my script this is yellow). 
+The results from the original script "image_search.py" is alright - the images are all yellow as the target image, but when comparing to the results from the upgraded script, it becomes clear that the method of comparing images using histograms is not as precise as using transfer learning, as I have done in the upgraded script. 
