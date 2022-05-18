@@ -1,5 +1,5 @@
 # Visual_Assignment_1
-## This is the repository for the first assignment in the portfolio for Visual Analytics
+## This is the repository for the first assignment in my portfolio for Visual Analytics
 
 ### Description of project 
 The code for this project aims to find similar images relative to a given target-image in a folder. 
