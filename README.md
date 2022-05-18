@@ -18,8 +18,9 @@ In order to reproduce the results I have gotten (and which can be found in the "
 3) Run the script from the terminal and remember to pass the required arguments (-ti (target_image) and -dn (directory_name)) for the image_search script - for the upgraded version you shouldn't pass any arguments when running the script. 
 -> Make sure to navigate to the main folder before excecuting the script - then you just have to type the following in the terminal:
 "python src/image_search.py -ti {name of the desired target image} -dn {name of the desired directory}" or "python src/image_search_TL.py" depending on which script you want to run. 
+The second script using transfer learning for some reason prints to the terminal while running - I'm not sure why, but it doesn't seem to impact the script and the results though.
 
-This will give you approximately the same results as I have gotten in the "out" folder". 
+This should give you the same results as I have gotten in the "out" folder". 
 
 ### Results
-The results from the original script "image_search.py" is alright - the images are all yellow as well as the target image, but when comparing to the results from the upgraded script, it becomes clear that the method of comparing images using histograms is not as precise as using transfer learning, as I have done in the upgraded script (this is all based on what I, a human, would expect to be most similar images). 
+The results from the original script "image_search.py" is alright - the images are all yellow as well as the target image, but when comparing to the results from the upgraded script, it becomes clear that the method of comparing images using histograms is not as precise as using transfer learning, as I have done in the upgraded script (this is all based on what I, a human, would expect to be most similar images). One thing that puzzles me is that the second script using transfer learning for some reason I can't seem to figure out saves two identical images to the figure. I tried looking into the code and the indexing, but I can't seem to figure out where I'm going wrong, and I didn't have time to look deepter into it. This could be optimized for future use. 
