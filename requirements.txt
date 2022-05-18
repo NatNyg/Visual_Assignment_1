@@ -1,0 +1,7 @@
+Required packages to install before running the script:
+
+For the first script "image_search.py":
+- cv2 
+
+For the second script "image_search_TL.py":
+- 
