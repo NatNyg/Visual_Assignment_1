@@ -15,7 +15,7 @@ def load_target_image(target_image_name, directory_name):
 This function loads the target image that is given as an input in the terminal
     """
     target_image_n = target_image_name
-    target_filepath = os.path.join("..","..","..","CDS-VIS",directory_name,target_image_n)
+    target_filepath = os.path.join("in",directory_name,target_image_n)
     target_image = cv2.imread(target_filepath)
     return target_image_n, target_image
      
@@ -34,7 +34,7 @@ This function calucates the normalized histogram for the target image and compar
      
     hist_comparison = []
  
-    filepaths = glob.glob(f"../../../CDS-VIS/{directory_name}/*.jpg")
+    filepaths = glob.glob(f"in/{directory_name}/*.jpg")
 
 
     for filepath in filepaths:
@@ -60,7 +60,7 @@ def save_images(top_three_filepaths, target_image, top_three, target_image_n, to
     """
 This function first converts the target image from BGR to RGB, as openCV interprets the colorchannels in different order than matplotlib. Then it loads the top three images as RGB and saves all of the images as subplots in a figure including each images' distance score relative to the targetimage, which is then saved to the out folder. It further saves a .csv file containing one column for the filename of the target image and three columns showing the filenames of the closest images in descending order
     """
-    filenames = os.listdir(os.path.join("..","..","..","CDS-VIS","flowers"))
+    filenames = os.listdir(os.path.join("in","flowers"))
     top_three_filenames = [(filenames[top_three_indexes[0]]),(filenames[top_three_indexes[1]]),(filenames[top_three_indexes[2]])]
     
     
